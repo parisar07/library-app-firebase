@@ -1,9 +1,9 @@
-import { Carousel } from "react-bootstrap"
-import DefaultLayout from "../../components/layout/DefaultLayout"
-import l1 from "../../assets/l1.jpg"
-import l2 from "../../assets/l2.jpg"
-import l3 from "../../assets/l3.jpg"
-import "./home.css"
+import { Carousel } from "react-bootstrap";
+import DefaultLayout from "../../components/layout/DefaultLayout";
+import l1 from "../../assets/l1.jpg";
+import l2 from "../../assets/l2.jpg";
+import l3 from "../../assets/l3.jpg";
+import "./home.css";
 
 const HomePage = () => {
   return (
@@ -51,6 +51,6 @@ const HomePage = () => {
         </Carousel>
       </div>
     </DefaultLayout>
-  )
-}
-export default HomePage
+  );
+};
+export default HomePage;

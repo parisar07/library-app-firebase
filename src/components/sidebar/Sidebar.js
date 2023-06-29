@@ -1,9 +1,9 @@
-import { NavLink, useLocation } from "react-router-dom"
-import "./sidebar.css"
-import { useSelector } from "react-redux"
+import { NavLink, useLocation } from "react-router-dom";
+import "./sidebar.css";
+import { useSelector } from "react-redux";
 const Sidebar = () => {
-  const { user } = useSelector((state) => state.user)
-  const { pathname } = useLocation()
+  const { user } = useSelector((state) => state.user);
+  const { pathname } = useLocation();
   return (
     <aside className="sidebar">
       <div className="top">
@@ -38,11 +38,17 @@ const Sidebar = () => {
                   <span>Transactions</span>
                 </li>
               </NavLink>
+              <NavLink to="/register">
+                <li className={pathname === "/register" ? "active" : ""}>
+                  <i className="fa-solid fa-book-open-reader"></i>
+                  <span>Register Admin</span>
+                </li>
+              </NavLink>
             </>
           )}
         </ul>
       </div>
     </aside>
-  )
-}
-export default Sidebar
+  );
+};
+export default Sidebar;
